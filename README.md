@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This is a widget that generates stylized story quotes as easy-to-share images for various social platforms. Built for the digital producers and audience team at the Atlanta Journal-Constitution.
-
-Will be deployed for internal use at the AJC.
+This is a widget that generates stylized story quotes as easy-to-share images for various social platforms. Built for the digital producers and audience team at the Atlanta Journal-Constitution. Adapted for use by the Miami Hurricane.
 
 ## Dependencies
 
