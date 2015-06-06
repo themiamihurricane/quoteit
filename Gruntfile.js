@@ -4,6 +4,7 @@ var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
     return connect.static(require('path').resolve(dir));
 };
+var fs = require('fs');
 
 // # Globbing
 // for performance reasons we're only matching one level down:
@@ -13,9 +14,9 @@ var mountFolder = function (connect, dir) {
 
 module.exports = function (grunt) {
 
-    
 
-    
+
+
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
@@ -106,7 +107,8 @@ module.exports = function (grunt) {
             }
         },
 
-        aws: grunt.file.readJSON("config/aws.json"),
+        // aws: grunt.file.readJSON("config/aws.json"),
+        aws: fs.existsSync(".aws-config.json") ? grunt.file.readJSON('.aws-config.json') : {},
         s3: {
           options: {
             accessKeyId: "<%= aws.key %>",
