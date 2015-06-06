@@ -6,24 +6,24 @@ $edit = $('#edit-img button');
 
 var quotes = [
     {
-        "quote": "There's always money in the banana stand.",
-        "attr": "George Bluth"
+        "quote": "A long time ago, a friend advised me to always leave a job when you still love it. That is certainly the case here.",
+        "attr": "Donna E. Shalala, in an email announcing the end of her time as the University of Miami's president"
     },
     {
         "quote": "Yo, Taylor, I'm really happy for you, I'ma let you finish, but Beyoncé had one of the best videos of all time!",
         "attr": "Kanye West, interrupting Taylor Swift's acceptance speech for Best Female Video at the 2009 MTV Video Music Awards"
     },
     {
-        "quote": "Usually Friday the 13th is a bad day. This is the best Friday the 13th we’ve ever had at UGA.",
-        "attr": "UGA Assistant Coach John Lilly to Macon County coach Larry Harold after high school recruit Roquan Smith chose UGA over UCLA"
+        "quote": "In terms of inclusiveness, I think UM is like those partitioned Styrofoam plates; you get a little bit of everything, but they don’t touch.",
+        "attr": "Senior Mischael Cetoute, regarding race relations at the University of Miami"
     },
     {
-        "quote": "I just wanted people to accept responsibility.",
-        "attr": "Judge Jerry Baxter, delivering sentences to convicted educators in the APS cheating trial"
+        "quote": "I have a great desire to take the university to the next level. This is the Miami moment. The university is poised to achieve great heights.",
+        "attr": "Dr. Julio Frenk at the announcement of his role as the University of Miami's next president"
     },
     {
-        "quote": "Annyong.",
-        "attr": "Annyong"
+        "quote": "C-A-N-E-S, Canes!",
+        "attr": "Sebastian the Ibis"
     }
 ];
 
@@ -31,7 +31,7 @@ var quotes = [
 var nameFile = function(){
 	$text = $('#quote-text p').text();
 	var t = $text.replace(/\s+/g, '_').toLowerCase().replace(/[^a-zA-Z0-9_]+/g, '').split('_', 4).join('_');
-	
+
 	return t;
 };
 
