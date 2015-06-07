@@ -69,9 +69,13 @@ header h3 {
 
 #name-text p {
 	color:#000;
-	line-height:1em;
+	line-height: 0.5em;
 	font-family:'Publico-Light';
 	font-size:20px;
+	outline:0px solid transparent;
+}
+
+#quote-text, #name-text, #title-text, #quote-text:focus, #name-text:focus, #title-text:focus {
 	outline:0px solid transparent;
 }
 
