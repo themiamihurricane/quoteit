@@ -8,22 +8,6 @@ var quotes = [
     {
         "quote": "A long time ago, a friend advised me to always leave a job when you still love it. That is certainly the case here.",
         "attr": "Donna E. Shalala, in an email announcing the end of her time as the University of Miami's president"
-    },
-    {
-        "quote": "Yo, Taylor, I'm really happy for you, I'ma let you finish, but Beyoncé had one of the best videos of all time!",
-        "attr": "Kanye West, interrupting Taylor Swift's acceptance speech for Best Female Video at the 2009 MTV Video Music Awards"
-    },
-    {
-        "quote": "In terms of inclusiveness, I think UM is like those partitioned Styrofoam plates; you get a little bit of everything, but they don’t touch.",
-        "attr": "Senior Mischael Cetoute, regarding race relations at the University of Miami"
-    },
-    {
-        "quote": "I have a great desire to take the university to the next level. This is the Miami moment. The university is poised to achieve great heights.",
-        "attr": "Dr. Julio Frenk at the announcement of his role as the University of Miami's next president"
-    },
-    {
-        "quote": "C-A-N-E-S, Canes!",
-        "attr": "Sebastian the Ibis"
     }
 ];
 
@@ -75,8 +59,8 @@ var editPoster = function() {
 
 $(function() {
 
-	$i = Math.floor(Math.random()*5);
-	makePoster(quotes[$i]);
+	//$i = Math.floor(Math.random()*5);
+	makePoster(quotes[0]);
 
 	var elements = document.querySelectorAll('.editable'),
     editor = new MediumEditor(elements, {

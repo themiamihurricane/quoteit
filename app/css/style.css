@@ -55,7 +55,7 @@ header h3 {
 	outline:0px solid transparent;
 }
 
-#name-text p {
+/*#attr-text p {
 	color:#000;
 	line-height:1.5em;
 	font-family:'Publico-Light';
@@ -64,6 +64,14 @@ header h3 {
 }
 
 #quote-text, #attr-text, #quote-text:focus, #attr-text:focus {
+	outline:0px solid transparent;
+}*/
+
+#name-text p {
+	color:#000;
+	line-height:1em;
+	font-family:'Publico-Light';
+	font-size:20px;
 	outline:0px solid transparent;
 }
 
