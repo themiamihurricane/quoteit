@@ -29,6 +29,11 @@ header h3 {
 	bottom: 25px;
 }
 
+.col-sm-12 {
+	position:relative;
+	top: 25px;
+}
+
 
 /* preview */
 
@@ -140,10 +145,10 @@ header h3 {
 }
 
 #make-img {
-	padding-top:30px;
+	padding-top:0px;
 	text-align:center;
 	position: relative;
-	bottom: 20px;
+	top: 10px;
 }
 #make-img button {
 	text-align:center;
