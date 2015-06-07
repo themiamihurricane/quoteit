@@ -8,7 +8,7 @@ var quotes = [
     {
         "quote": "Type quote here",
         "name": "Type person's name here",
-        "title": "Type person's title OR context of quote here"
+        "title": "Type person's title here"
     }
 ];
 
