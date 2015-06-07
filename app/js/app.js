@@ -74,10 +74,16 @@ $(function() {
 			$('#quote-text p').css( 'font-size', quoteSize.getValue() +'px');
 		});
 
-	var attrSize = $("#attr-font-size").slider()
+	var nameSize = $("#name-font-size").slider()
 		.data('slider')
 		.on('slide', function(){
-			$('#attr-text p').css( 'font-size', attrSize.getValue() +'px');
+			$('#name-text p').css( 'font-size', nameSize.getValue() +'px');
+		});
+
+  var titleSize = $("#title-font-size").slider()
+		.data('slider')
+		.on('slide', function(){
+			$('#title-text p').css( 'font-size', titleSize.getValue() +'px');
 		});
 
 	$save.on('click', savePoster);
