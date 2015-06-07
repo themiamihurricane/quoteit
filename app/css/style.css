@@ -24,6 +24,11 @@ header h3 {
 	margin-left:2em;
 }
 
+.container {
+	position: relative;
+	bottom: 25px;
+}
+
 
 /* preview */
 
