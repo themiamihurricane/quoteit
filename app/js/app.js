@@ -6,8 +6,9 @@ $edit = $('#edit-img button');
 
 var quotes = [
     {
-        "quote": "A long time ago, a friend advised me to always leave a job when you still love it. That is certainly the case here.",
-        "attr": "Donna E. Shalala, in an email announcing the end of her time as the University of Miami's president"
+        "quote": "Type quote here",
+        "name": "Type person's name here",
+        "title": "Type person's title OR context of quote here"
     }
 ];
 
@@ -45,7 +46,8 @@ var savePoster = function(){
 
 var makePoster = function(i) {
 	$('#quote-text p').empty().append('&ldquo;'+i.quote+'&rdquo;');
-	$('#attr-text p').empty().append(i.attr);
+	$('#name-text p').empty().append(i.name);
+  $('#title-text p').empty().append(i.title);
 }
 
 var editPoster = function() {
