@@ -142,6 +142,8 @@ header h3 {
 #make-img {
 	padding-top:30px;
 	text-align:center;
+	position: relative;
+	bottom: 20px;
 }
 #make-img button {
 	text-align:center;
