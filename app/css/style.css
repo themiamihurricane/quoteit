@@ -24,6 +24,16 @@ header h3 {
 	margin-left:2em;
 }
 
+.container {
+	position: relative;
+	bottom: 25px;
+}
+
+.col-sm-12 {
+	position:relative;
+	top: 25px;
+}
+
 
 /* preview */
 
@@ -43,7 +53,7 @@ header h3 {
 	position:absolute;
 	top:20px;
 	left:20px;
-	width:82%;
+	width:90%;
 }
 
 #quote-text p {
@@ -55,14 +65,27 @@ header h3 {
 	outline:0px solid transparent;
 }
 
-#attr-text p {
+/*#attr-text p {
 	color:#000;
 	line-height:1.5em;
 	font-family:'Publico-Light';
 	font-size:20px;
 	outline:0px solid transparent;
 }
+
 #quote-text, #attr-text, #quote-text:focus, #attr-text:focus {
+	outline:0px solid transparent;
+}*/
+
+#name-text p {
+	color:#000;
+	line-height: 0.5em;
+	font-family:'Publico-Light';
+	font-size:20px;
+	outline:0px solid transparent;
+}
+
+#quote-text, #name-text, #title-text, #quote-text:focus, #name-text:focus, #title-text:focus {
 	outline:0px solid transparent;
 }
 
@@ -122,8 +145,10 @@ header h3 {
 }
 
 #make-img {
-	padding-top:30px;
+	padding-top:0px;
 	text-align:center;
+	position: relative;
+	top: 10px;
 }
 #make-img button {
 	text-align:center;

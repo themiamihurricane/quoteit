@@ -25,7 +25,7 @@
 		  	<div class="row">
 		  		<div class="col-sm-12">
 		  			<h1>QuoteIt</h1>
-		  			<h3>A shareable pull quote image builder for the Miami Hurricane.</h3>
+		  			<h3>A shareable pull quote image builder for The Miami Hurricane.</h3>
 		  		</div>
 		  	</div>
 	  	</div>
@@ -34,21 +34,24 @@
     <div class="container">
 	    <div class="row">
 	    	<div class="col-sm-8" id="preview-box">
-	    		<div class="ajc" id="preview">
+	    		<div id="preview">
 	    			<div id="poster">
 		    			<div id="text-box">
 			    			<div class="editable" id="quote-text">
-			    				<p>“Usually Friday the 13th is a bad day. This is the best Friday the 13th we’ve ever had at UGA.”</p>
+			    				<p>“Quote here”</p>
 			    			</div>
-			    			<div class="editable" id="attr-text">
-			    				<p>UGA Assistant Coach John Lilly to Macon County coach Larry Harold after high school recruit Roquan Smith chose UGA over UCLA</p>
+			    			<div class="editable" id="name-text">
+			    				<p>Name here</p>
 			    			</div>
-			    		</div>
+                <div class="editable" id="title-text">
+			    				<p>Title here</p>
+			    			</div>
+			    		</div> <!-- End text-box -->
 		    			<div id="logo">
 		    				<img src="img/tmh-logo.jpg" height="75px"/>
-		    			</div>
-		    		</div>
-	    		</div>
+		    			</div> <!-- End logo -->
+		    		</div> <!-- End poster -->
+	    		</div> <!-- End preview -->
 	    		<div id="edit-img">
 	    			<button class="btn btn-lg btn-default">Edit your image</button>
 	    		</div>
@@ -56,7 +59,7 @@
 
 	    	<div class="col-sm-4" id="options">
 
-	    		<p>Edit the image by clicking and typing directly on the preview to the left. You can adjust the size of the text using the sliders below. When you're finished editing, click the "save my image" button and your quote image will download to your computer.</p>
+	    		<p>Edit the image by clicking and typing directly on the preview to the left. You can adjust the size of the text using the sliders below. When you're finished editing, click the "Save &amp download" button and your quote image will download to your computer.</p>
 
 	    		<hr/>
 
@@ -65,14 +68,18 @@
 	    		<input type="text" id="quote-font-size" value="" data-slider-min="20" data-slider-max="70" data-slider-step="2" data-slider-value="40" data-slider-id="quote-font-size" id="B" data-slider-tooltip="hide" />
 
 
-	    		<h4>Attribution font size:</h4>
+	    		<h4>Name font size:</h4>
 
-	    		<input type="text" id="attr-font-size" value="" data-slider-min="10" data-slider-max="40" data-slider-step="1" data-slider-value="20" data-slider-id="attr-font-size" id="B" data-slider-tooltip="hide" />
+	    		<input type="text" id="name-font-size" value="" data-slider-min="10" data-slider-max="40" data-slider-step="1" data-slider-value="20" data-slider-id="attr-font-size" id="B" data-slider-tooltip="hide" />
+
+          <h4>Title font size:</h4>
+
+	    		<input type="text" id="title-font-size" value="" data-slider-min="10" data-slider-max="40" data-slider-step="1" data-slider-value="16" data-slider-id="attr-font-size" id="B" data-slider-tooltip="hide" />
 
 
 
 	    		<div id="make-img">
-	    			<button class="btn btn-lg btn-default">Save & download</button>
+	    			<button class="btn btn-lg btn-default">Save &amp download</button>
 	    		</div>
 
 	    	</div>

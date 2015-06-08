@@ -6,24 +6,9 @@ $edit = $('#edit-img button');
 
 var quotes = [
     {
-        "quote": "A long time ago, a friend advised me to always leave a job when you still love it. That is certainly the case here.",
-        "attr": "Donna E. Shalala, in an email announcing the end of her time as the University of Miami's president"
-    },
-    {
-        "quote": "Yo, Taylor, I'm really happy for you, I'ma let you finish, but Beyoncé had one of the best videos of all time!",
-        "attr": "Kanye West, interrupting Taylor Swift's acceptance speech for Best Female Video at the 2009 MTV Video Music Awards"
-    },
-    {
-        "quote": "In terms of inclusiveness, I think UM is like those partitioned Styrofoam plates; you get a little bit of everything, but they don’t touch.",
-        "attr": "Senior Mischael Cetoute, regarding race relations at the University of Miami"
-    },
-    {
-        "quote": "I have a great desire to take the university to the next level. This is the Miami moment. The university is poised to achieve great heights.",
-        "attr": "Dr. Julio Frenk at the announcement of his role as the University of Miami's next president"
-    },
-    {
-        "quote": "C-A-N-E-S, Canes!",
-        "attr": "Sebastian the Ibis"
+        "quote": "Type quote here",
+        "name": "Type person's name here",
+        "title": "Type person's title here"
     }
 ];
 
@@ -49,10 +34,10 @@ var savePoster = function(){
 	  	$poster.hide();
 	    $preview.append(canvas);
 	    var img = canvas.toDataURL();
-        var a = $("<a>").attr("href", img).attr("download", "quote-" + filename + ".png").appendTo("body");
+      var a = $("<a>").attr("href", img).attr("download", "quote-" + filename + ".png").appendTo("body");
 	  	a[0].click();
-        a.remove();
-        $preview.addClass('no-edit');
+      a.remove();
+      $preview.addClass('no-edit');
 	  }
 	});
 
@@ -61,7 +46,8 @@ var savePoster = function(){
 
 var makePoster = function(i) {
 	$('#quote-text p').empty().append('&ldquo;'+i.quote+'&rdquo;');
-	$('#attr-text p').empty().append(i.attr);
+	$('#name-text p').empty().append(i.name);
+  $('#title-text p').empty().append(i.title);
 }
 
 var editPoster = function() {
@@ -75,8 +61,8 @@ var editPoster = function() {
 
 $(function() {
 
-	$i = Math.floor(Math.random()*5);
-	makePoster(quotes[$i]);
+	//$i = Math.floor(Math.random()*5);
+	makePoster(quotes[0]);
 
 	var elements = document.querySelectorAll('.editable'),
     editor = new MediumEditor(elements, {
@@ -90,10 +76,16 @@ $(function() {
 			$('#quote-text p').css( 'font-size', quoteSize.getValue() +'px');
 		});
 
-	var attrSize = $("#attr-font-size").slider()
+	var nameSize = $("#name-font-size").slider()
 		.data('slider')
 		.on('slide', function(){
-			$('#attr-text p').css( 'font-size', attrSize.getValue() +'px');
+			$('#name-text p').css( 'font-size', nameSize.getValue() +'px');
+		});
+
+  var titleSize = $("#title-font-size").slider()
+		.data('slider')
+		.on('slide', function(){
+			$('#title-text p').css( 'font-size', titleSize.getValue() +'px');
 		});
 
 	$save.on('click', savePoster);
